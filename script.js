@@ -18,4 +18,10 @@ request.addEventListener("load", function () {
   });
 });
 
+request.addEventListener("error", function () {
+  const li = document.createElement("li");
+  li.textContent = "Server eror";
+  ulEl.appendChild(li);
+});
+
 request.send();
