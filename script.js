@@ -11,6 +11,9 @@ request.addEventListener("load", function () {
     const li = document.createElement("li");
     li.textContent = element.name;
     li.style.backgroundColor = element.color;
+    let colorCode = document.createElement("span");
+    colorCode.textContent = `Colore code  ${element.color}`;
+    li.appendChild(colorCode);
     ulEl.appendChild(li);
   });
 });
